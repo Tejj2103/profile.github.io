@@ -95,6 +95,303 @@ a:hover {
 
 .main {
   padding: 0 50px;
+  height: 550px;
+  background-color: #303030;
+  color: white;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.content p {
+  width: 200px;
+  font-size: 22px;
+}
+
+.card {
+  color: red;
+  padding: 0 20px;
+  height: 100px;
+  width: auto;
+}
+
+.others {
+  padding: 0 50px;
+  height: 600px;
+  background-color: #000;
+  color: red;
+  display: flex;
+  flex-direction: column;
+}
+#youImg {
+  width: 80%;
+  height: 80%;
+}
+
+.youtube {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.youCard {
+  margin-top: 10px;
+  width: 300px;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+}
+
+#heading1 {
+  position: relative;
+  letter-spacing: 8px;
+  animation: text 3s 1;
+}
+
+.interests {
+  padding: 0 50px;
+  height: 600px;
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+}
+
+.intContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eventCard {
+  width: 320px;
+  height: 200px;
+  margin:4px;
+}
+
+#events {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  padding: 0 50px;
+  height: 200px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  color: red;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+}
+@keyframes text {
+  0% {
+    color: black;
+    margin: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  80% {
+    letter-spacing: 8px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #fullstack {
+    padding-top: 10px;
+    margin: 85px 10px;
+    color: white;
+    bottom: 0px;
+    font-size: 68px;
+    text-align: end;
+  }
+  .main {
+    height: auto;
+  }
+  .right {
+    background-color: #000;
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #profileImg {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+  }
+
+  .others {
+    height: auto;
+  }
+
+  .youtube {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .youCard {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .interests {
+    padding: 0 50px;
+    height: auto;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .eventCard {
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #events {
+    width: 100%;
+    height: 90%;
+  }
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat";
+  background-color: #303030;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav {
+  padding: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+}
+nav ul li {
+  display: inline;
+  float: left;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 0 30px;
+}
+
+#logo {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+}
+
+.hero {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 40%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+#fullstack {
+  color: white;
+  position: absolute;
+  top: 0px;
+  text-transform: uppercase;
+  font-size: 99px;
+  font-weight: 800;
+}
+
+.right {
+  background-color: #000;
+  width: 60%;
+  height: 600px;
+  color: #fff;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutSec {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.projectStats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stats {
+  width: 50%;
+}
+
+.aht {
+  width: 50%;
+}
+
+.main {
+  padding: 0 50px;
   height: 400px;
   background-color: #303030;
   color: white;
